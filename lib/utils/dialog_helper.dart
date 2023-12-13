@@ -13,21 +13,22 @@ class DialogHelper {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Row(
+               Row(
                 children: [
-                  Image(
-                    image: AssetImage("assets/images/logo.png"),
+                  const Image(
+                    image: AssetImage("assets/images/common/logo.png"),
                     width: 25.0,
                     height: 25.0,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Image(
-                    image: AssetImage("assets/images/company_name.png"),
-                    width: 80.0,
-                    height: 25.0,
-                  ),
+                  // Image(
+                  //   image: AssetImage("assets/images/common/logo_with_name.png"),
+                  //   width: 80.0,
+                  //   height: 25.0,
+                  // ),
+                  Text("H.RishabRaj Purchase",style: AppTextstyle.ts18BB.copyWith(color: AppColor.blue),)
                 ],
               ),
               const SizedBox(height: 10.0),
@@ -100,7 +101,7 @@ class DialogHelper {
               Row(
                 children: [
                   const Image(
-                    image: AssetImage("assets/images/logo.png"),
+                    image: AssetImage("assets/images/common/logo.png"),
                     width: 25.0,
                     height: 25.0,
                   ),

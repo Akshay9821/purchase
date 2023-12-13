@@ -18,7 +18,7 @@ class MyHttpOverrides extends HttpOverrides {
 void main() async {
   HttpOverrides.global = MyHttpOverrides();
   await GetStorage.init();
-
+  await GetStorage.init("static");
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: "H. Rishabraj PURCHASE",
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoute.walkThrough,
+      initialRoute: AppRoute.splash,
       getPages: routeList,
     );
   }

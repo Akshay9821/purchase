@@ -150,4 +150,10 @@ class AppTextstyle {
     fontSize: 16.0,
     color: AppColor.grey,
   );
+
+  static TextStyle ts14GR = TextStyle(
+    fontFamily: "regular",
+    fontSize: 14.0,
+    color: AppColor.grey,
+  );
 }
